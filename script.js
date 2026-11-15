@@ -1,4 +1,3 @@
-
 (() => {
     const EMAIL = "hashirshah.8990@gmail.com";
     const $ = (s) => document.querySelector(s);
@@ -21,7 +20,7 @@
     updateClock();
     setInterval(updateClock, 30000);
 
-
+    
     if (window.matchMedia("(pointer: fine)").matches) {
         document.addEventListener("mousemove", (e) => {
             $$(".glass-spotlight").forEach((el) => {
@@ -32,13 +31,13 @@
         }, { passive: true });
     }
 
-
+    
     function notify(msg) {
         const t = $("#toast");
         t.textContent = msg;
         t.classList.add("show");
         clearTimeout(notify._t);
-        notify._t = setTimeout(() => t.classList.remove("show"), 2400);
+        notify._t = setTimeout(() => t.classList.remove("show"), 2600);
     }
 
     $("#copyMailBtn").addEventListener("click", async () => {
@@ -50,7 +49,7 @@
         }
     });
 
-
+    
     const WORKS = [
         {
             id: "zalleve",
@@ -84,14 +83,14 @@
             cat: "web",
             title: "Olivetta",
             year: "GitHub",
-            summary: "Clean, responsive web build focused on modular frontend layout and light asset weight.",
-            details: "Personal repository project built to refine layout structure, responsive breakpoints, and clean frontend code.",
+            summary: "Modern restaurant landing page built with React and TypeScript, focused on clean visual hierarchy.",
+            details: "Personal repository project designed as a responsive restaurant landing experience with modular TypeScript components.",
             points: [
-                "Semantic HTML and modular stylesheet architecture",
+                "Component-driven UI built in React with TypeScript type safety",
                 "Responsive layout tuned across mobile and desktop viewports",
                 "Version-controlled and maintained on GitHub"
             ],
-            stack: ["HTML5", "CSS3", "JavaScript"],
+            stack: ["React", "TypeScript", "CSS3"],
             live: "",
             repo: "https://github.com/Hashir8990/olivetta",
             wireframe: `
@@ -223,7 +222,7 @@
         });
     });
 
-
+    
     const drawer = $("#drawer");
     function openDrawer(id) {
         const item = WORKS.find((w) => w.id === id);
@@ -247,7 +246,7 @@
     drawer.addEventListener("click", (e) => { if (e.target === drawer) drawer.classList.remove("open"); });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") drawer.classList.remove("open"); });
 
-
+    
     const navMenu = $("#navMenu");
     $("#menuToggle").addEventListener("click", () => navMenu.classList.toggle("open"));
     $$("#navMenu a").forEach((a) => a.addEventListener("click", () => navMenu.classList.remove("open")));
@@ -261,7 +260,7 @@
     }, { rootMargin: "-40% 0px -50% 0px" });
     $$("main section").forEach((s) => spy.observe(s));
 
-
+    
     const rev = new IntersectionObserver((entries) => {
         entries.forEach((en) => {
             if (en.isIntersecting) {
@@ -272,11 +271,40 @@
     }, { threshold: 0.1 });
     $$(".fade-up").forEach((el) => rev.observe(el));
 
-    $("#contactForm").addEventListener("submit", (e) => {
+    
+    const contactForm = $("#contactForm");
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const name = $("#cName").value.trim();
-        notify("Thanks " + name + " — message ready.");
-        e.target.reset();
+
+        const formData = new FormData(contactForm);
+        formData.append("access_key", "c7442c3f-e350-45ed-8924-e1d4c060e2f1");
+
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                notify("Message sent! I'll get back to you soon.");
+                contactForm.reset();
+            } else {
+                notify("Error: " + (data.message || "Could not send message."));
+            }
+        } catch (error) {
+            notify("Network error. Please try again.");
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
     });
 
     $("#yr").textContent = new Date().getFullYear();
