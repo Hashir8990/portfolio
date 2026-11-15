@@ -249,9 +249,13 @@
           </div>
 
           <form class="contact-form" id="contactForm">
-            <input type="text" id="cName" placeholder="Your name" required />
-            <input type="email" id="cEmail" placeholder="you@domain.com" required />
-            <textarea id="cMsg" rows="4" placeholder="Tell me briefly about your project or timeline..." required></textarea>
+            <input type="hidden" name="access_key" value="c7442c3f-e350-45ed-8924-e1d4c060e2f1" />
+            <input type="hidden" name="subject" value="New Message from Portfolio" />
+            <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off" />
+
+            <input type="text" id="cName" name="name" placeholder="Your name" required />
+            <input type="email" id="cEmail" name="email" placeholder="you@domain.com" required />
+            <textarea id="cMsg" name="message" rows="4" placeholder="Tell me briefly about your project or timeline..." required></textarea>
             <button type="submit" class="btn-pill btn-solid" style="justify-content: center; padding: 12px 20px;">Send message</button>
           </form>
         </div>
