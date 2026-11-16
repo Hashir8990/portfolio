@@ -50,7 +50,7 @@
     });
 
     
-    const WORKS = [
+const WORKS = [
         {
             id: "zalleve",
             cat: "commerce",
@@ -79,6 +79,39 @@
           `
         },
         {
+            id: "billflow",
+            cat: "web",
+            title: "BillFlow",
+            year: "Live • 2026",
+            summary: "SaaS invoice generator, client billing directory, and printable PDF portal built with Next.js & TypeScript.",
+            details: "Multi-route App Router SaaS application featuring live revenue KPIs, dynamic line-item invoicing with tax calculation, and print-ready PDF export.",
+            points: [
+                "Next.js App Router architecture with strict TypeScript interfaces and Context state",
+                "Interactive revenue chart, status filtering, and dynamic invoice builder",
+                "Clean print-optimized A4 invoice sheet with one-click Save as PDF"
+            ],
+            stack: ["Next.js", "TypeScript", "Tailwind"],
+            live: "https://billflow-xi-tan.vercel.app/",
+            repo: "https://github.com/Hashir8990/billflow",
+            wireframe: `
+            <div class="wf-bar">
+              <div class="wf-dots"><span></span><span></span><span></span></div>
+              <span>billflow / overview</span>
+            </div>
+            <div class="wf-dash">
+              <div class="wf-box" style="justify-content: flex-start; gap: 7px;">
+                <div class="wf-line"></div>
+                <div class="wf-line short"></div>
+                <div class="wf-line"></div>
+              </div>
+              <div class="wf-box">
+                <div class="wf-line" style="height: 28px; opacity: 0.35;"></div>
+                <div class="wf-line short"></div>
+              </div>
+            </div>
+          `
+        },
+        {
             id: "slotbook",
             cat: "web",
             title: "SlotBook",
@@ -92,20 +125,20 @@
             ],
             stack: ["React", "Tailwind", "PHP 8", "MySQL"],
             live: "https://frontend-puce-six-34.vercel.app/",
-            repo: "",
+            repo: "https://github.com/Hashir8990/slotbook",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
               <span>slotbook</span>
             </div>
-            <div class="wf-dash">
-              <div class="wf-box" style="justify-content: flex-start; gap: 7px;">
+            <div class="wf-editorial">
+              <div class="wf-box" style="justify-content: flex-start; gap: 6px;">
                 <div class="wf-line"></div>
                 <div class="wf-line short"></div>
-                <div class="wf-line"></div>
+                <div class="wf-line" style="height: 18px; opacity: 0.25;"></div>
               </div>
-              <div class="wf-box">
-                <div class="wf-line" style="height: 22px; opacity: 0.35;"></div>
+              <div class="wf-box" style="justify-content: center;">
+                <div class="wf-line"></div>
                 <div class="wf-line short"></div>
               </div>
             </div>
@@ -115,7 +148,7 @@
             id: "olivetta",
             cat: "web",
             title: "Olivetta",
-            year: "Live • 2025",
+            year: "GitHub",
             summary: "Modern restaurant landing page built with React and TypeScript, focused on clean visual hierarchy.",
             details: "Personal repository project designed as a responsive restaurant landing experience with modular TypeScript components.",
             points: [
@@ -124,12 +157,12 @@
                 "Version-controlled and maintained on GitHub"
             ],
             stack: ["React", "TypeScript", "CSS3"],
-            live: "https://olivetta-nine.vercel.app/",
-            repo: "",
+            live: "",
+            repo: "https://github.com/Hashir8990/olivetta",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
-              <span>olivetta</span>
+              <span>github / olivetta</span>
             </div>
             <div class="wf-editorial">
               <div class="wf-box" style="justify-content: center;">
@@ -177,24 +210,24 @@
           `
         },
         {
-            id: "pipeline",
-            cat: "next",
-            title: "Next Web & Mobile Builds",
-            year: "Upcoming",
-            summary: "Two new full-stack web projects and a cross-platform mobile app currently in the pipeline.",
-            details: "Expanding my public case studies right after launching this portfolio — focused on modern React/Next.js web apps and a React Native mobile application.",
+            id: "spendwise",
+            cat: "mobile",
+            title: "SpendWise Mobile App",
+            year: "In Progress",
+            summary: "Cross-platform expense & monthly budget tracker app built with React Native, Expo, and TypeScript.",
+            details: "Mobile application currently in active build — featuring instant transaction logging, category breakdowns, monthly budget limits, and offline storage.",
             points: [
-                "SaaS / productivity web app with clean API architecture",
-                "Dedicated business web build with full live demo",
-                "Cross-platform iOS & Android app built with React Native"
+                "Cross-platform iOS & Android UI with Expo Router tab navigation",
+                "Offline-first persistence via AsyncStorage with clean TypeScript state",
+                "Android APK release & interactive web preview coming next"
             ],
-            stack: ["Next.js", "React Native", "Tailwind"],
+            stack: ["React Native", "Expo", "TypeScript"],
             live: "",
             repo: "https://github.com/Hashir8990",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
-              <span>in-progress</span>
+              <span>spendwise-app</span>
             </div>
             <div class="wf-phone-wrap">
               <div class="wf-phone">
