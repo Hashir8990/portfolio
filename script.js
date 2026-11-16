@@ -92,11 +92,11 @@
             ],
             stack: ["React", "TypeScript", "CSS3"],
             live: "",
-            repo: "https://github.com/Hashir8990/olivetta",
+            repo: "https://olivetta-nine.vercel.app/",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
-              <span>github / olivetta</span>
+              <span>olivetta</span>
             </div>
             <div class="wf-editorial">
               <div class="wf-box" style="justify-content: center;">
