@@ -82,7 +82,7 @@
             id: "olivetta",
             cat: "web",
             title: "Olivetta",
-            year: "GitHub",
+            year: "Live • 2025",
             summary: "Modern restaurant landing page built with React and TypeScript, focused on clean visual hierarchy.",
             details: "Personal repository project designed as a responsive restaurant landing experience with modular TypeScript components.",
             points: [
@@ -91,8 +91,8 @@
                 "Version-controlled and maintained on GitHub"
             ],
             stack: ["React", "TypeScript", "CSS3"],
-            live: "",
-            repo: "https://olivetta-nine.vercel.app/",
+            live: "https://olivetta-nine.vercel.app/",
+            repo: "",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
