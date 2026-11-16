@@ -92,7 +92,7 @@ const WORKS = [
             ],
             stack: ["Next.js", "TypeScript", "Tailwind"],
             live: "https://billflow-xi-tan.vercel.app/",
-            repo: "https://github.com/Hashir8990/billflow",
+            repo: "",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
@@ -125,7 +125,7 @@ const WORKS = [
             ],
             stack: ["React", "Tailwind", "PHP 8", "MySQL"],
             live: "https://frontend-puce-six-34.vercel.app/",
-            repo: "https://github.com/Hashir8990/slotbook",
+            repo: "",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
@@ -157,12 +157,12 @@ const WORKS = [
                 "Version-controlled and maintained on GitHub"
             ],
             stack: ["React", "TypeScript", "CSS3"],
-            live: "",
-            repo: "https://github.com/Hashir8990/olivetta",
+            live: "https://olivetta-nine.vercel.app/",
+            repo: "",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
-              <span>github / olivetta</span>
+              <span>olivetta</span>
             </div>
             <div class="wf-editorial">
               <div class="wf-box" style="justify-content: center;">
