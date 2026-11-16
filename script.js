@@ -92,7 +92,7 @@
             ],
             stack: ["React", "Tailwind", "PHP 8", "MySQL"],
             live: "https://frontend-puce-six-34.vercel.app/",
-            repo: "https://github.com/Hashir8990/slotbook",
+            repo: "",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
