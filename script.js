@@ -79,6 +79,39 @@
           `
         },
         {
+            id: "slotbook",
+            cat: "web",
+            title: "SlotBook",
+            year: "Live • 2026",
+            summary: "Full-stack appointment scheduling & admin dashboard with live slot locking and booking tracking.",
+            details: "Cal.com-inspired booking system built with React & Tailwind on the frontend and a PHP 8 PDO + MySQL REST API on the backend, featuring an interactive Vercel demo fallback.",
+            points: [
+                "14-day live date strip with double-booking prevention using MySQL transactions",
+                "Unique booking reference code lookup & live status tracking",
+                "Admin dashboard with revenue metrics, filters, and slot cancellation/restore"
+            ],
+            stack: ["React", "Tailwind", "PHP 8", "MySQL"],
+            live: "https://frontend-puce-six-34.vercel.app/",
+            repo: "https://github.com/Hashir8990/slotbook",
+            wireframe: `
+            <div class="wf-bar">
+              <div class="wf-dots"><span></span><span></span><span></span></div>
+              <span>slotbook</span>
+            </div>
+            <div class="wf-dash">
+              <div class="wf-box" style="justify-content: flex-start; gap: 7px;">
+                <div class="wf-line"></div>
+                <div class="wf-line short"></div>
+                <div class="wf-line"></div>
+              </div>
+              <div class="wf-box">
+                <div class="wf-line" style="height: 22px; opacity: 0.35;"></div>
+                <div class="wf-line short"></div>
+              </div>
+            </div>
+          `
+        },
+        {
             id: "olivetta",
             cat: "web",
             title: "Olivetta",
