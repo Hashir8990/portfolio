@@ -148,13 +148,13 @@ const WORKS = [
             id: "olivetta",
             cat: "web",
             title: "Olivetta",
-            year: "GitHub",
+            year: "Live",
             summary: "Modern restaurant landing page built with React and TypeScript, focused on clean visual hierarchy.",
-            details: "Personal repository project designed as a responsive restaurant landing experience with modular TypeScript components.",
+            details: "Responsive restaurant landing experience designed with modular React and TypeScript components and clean typography.",
             points: [
                 "Component-driven UI built in React with TypeScript type safety",
                 "Responsive layout tuned across mobile and desktop viewports",
-                "Version-controlled and maintained on GitHub"
+                "Deployed and live on Vercel"
             ],
             stack: ["React", "TypeScript", "CSS3"],
             live: "https://olivetta-nine.vercel.app/",
@@ -213,17 +213,17 @@ const WORKS = [
             id: "spendwise",
             cat: "mobile",
             title: "SpendWise Mobile App",
-            year: "In Progress",
+            year: "Live • 2026",
             summary: "Cross-platform expense & monthly budget tracker app built with React Native, Expo, and TypeScript.",
-            details: "Mobile application currently in active build — featuring instant transaction logging, category breakdowns, monthly budget limits, and offline storage.",
+            details: "Mobile-first personal finance application built with React Native and Expo — featuring instant expense/income logging, category breakdowns, monthly budget limits, and persistent offline storage.",
             points: [
-                "Cross-platform iOS & Android UI with Expo Router tab navigation",
-                "Offline-first persistence via AsyncStorage with clean TypeScript state",
-                "Android APK release & interactive web preview coming next"
+                "Cross-platform iOS, Android & Web UI with Expo Router tab navigation",
+                "Offline-first persistence via AsyncStorage with strict TypeScript state",
+                "Monthly spending limit tracker with live category percentage insights"
             ],
             stack: ["React Native", "Expo", "TypeScript"],
-            live: "",
-            repo: "https://github.com/Hashir8990",
+            live: "https://spendwise-two-blush.vercel.app/",
+            repo: "",
             wireframe: `
             <div class="wf-bar">
               <div class="wf-dots"><span></span><span></span><span></span></div>
